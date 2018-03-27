@@ -1,4 +1,10 @@
 {
+    "post-install-cmd": [
+      "Illuminate\Foundation\ComposerScripts::postInstall",
+      "php artisan optimize",
+      "php artisan migrate --force"
+    ],
+    
     "name": "laravel/laravel",
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
